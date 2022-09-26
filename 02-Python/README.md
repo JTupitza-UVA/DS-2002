@@ -4,3 +4,4 @@
 - <a href="https://books.trinket.io/pfe/"><b>Book:</b> Python for Everybody</a>
 - <a href="https://www.python.org/">Python Language Guide</a>
 - <a href="https://pandas.pydata.org/docs/">Pandas Documentation</a>
+- <a href="https://github.com/public-apis/public-apis#open-data">Public API's: A collective list of free APIs for use in software and web development</a>
