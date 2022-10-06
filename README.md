@@ -1,7 +1,7 @@
 # DS-2002-002: Data Science Systems
 This repository contains artifacts supporting the DS-2002-02 Data Science Systems course
 
-### DS-2002-002: Course Syllabus 
+### Course Syllabus 
 
 | Unit/Topic  | Dates | Topic(s)   | Labs/Activities |
 | ----------- | ----- | ---------- | --------------- |
@@ -29,3 +29,6 @@ This repository contains artifacts supporting the DS-2002-02 Data Science System
 | Topic 3 | 11/14 | Databricks Files, Databases, Tables and Views | **Lab 05: Using Python to Perform Extract-Transform-Load (ETL) Processing** |
 | Topic 4 | 11/16 | Integrating Real-Time Data with Structured Streaming | **Lab 06: Incremental Updates with Structured Streaming and Delta Lake** |
 | **Project 2:** | **11/21** | **Create a Data Lakehouse Using Databricks** | |
+
+### Resources:
+- <a href="https://docs.github.com/en/get-started/quickstart/hello-world"><b>Tutorial: </b>Getting Started with GitHub</a>
