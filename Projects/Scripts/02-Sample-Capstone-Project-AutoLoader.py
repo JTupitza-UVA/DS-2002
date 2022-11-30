@@ -428,9 +428,18 @@ df_address.write.format("delta").mode("overwrite").saveAsTable("adventure_works.
 # MAGIC CREATE OR REPLACE TEMPORARY VIEW fact_orders_silver_tempview AS (
 # MAGIC   SELECT t.SalesOrderID
 # MAGIC     , t.RevisionNumber
-# MAGIC     , t.OrderDate
-# MAGIC     , t.DueDate
-# MAGIC     , t.ShipDate
+# MAGIC     , od.MonthName AS OrderMonth
+# MAGIC     , od.WeekDayName AS OrderDayName
+# MAGIC     , od.Day AS OrderDay
+# MAGIC     , od.Year AS OrderYear
+# MAGIC     , dd.MonthName AS DueMonth
+# MAGIC     , dd.WeekDayName AS DueDayName
+# MAGIC     , dd.Day AS DueDate
+# MAGIC     , dd.Year AS DueYear
+# MAGIC     , sd.MonthName AS ShipMonth
+# MAGIC     , sd.WeekDayName AS ShipDayName
+# MAGIC     , sd.Day AS ShipDay
+# MAGIC     , sd.Year AS ShipYear
 # MAGIC     , t.Status
 # MAGIC     , t.OnlineOrderFlag
 # MAGIC     , t.SalesOrderNumber
@@ -475,7 +484,13 @@ df_address.write.format("delta").mode("overwrite").saveAsTable("adventure_works.
 # MAGIC   INNER JOIN adventure_works.dim_address ba
 # MAGIC   ON t.BillToAddressID = CAST(ba.AddressID AS BIGINT)
 # MAGIC   INNER JOIN adventure_works.dim_product p
-# MAGIC   ON t.ProductID = p.ProductID)
+# MAGIC   ON t.ProductID = p.ProductID
+# MAGIC   INNER JOIN adventure_works.dim_date od
+# MAGIC   ON CAST(t.OrderDate AS DATE) = od.Date
+# MAGIC   INNER JOIN adventure_works.dim_date dd
+# MAGIC   ON CAST(t.DueDate AS DATE) = dd.Date
+# MAGIC   INNER JOIN adventure_works.dim_date sd
+# MAGIC   ON CAST(t.ShipDate AS DATE) = sd.Date)
 
 # COMMAND ----------
 
@@ -507,9 +522,10 @@ df_address.write.format("delta").mode("overwrite").saveAsTable("adventure_works.
 # MAGIC SELECT CustomerID
 # MAGIC   , LastName
 # MAGIC   , FirstName
+# MAGIC   , OrderMonth
 # MAGIC   , COUNT(ProductID) AS ProductCount
 # MAGIC FROM adventure_works.fact_orders_silver
-# MAGIC GROUP BY CustomerID, LastName, FirstName
+# MAGIC GROUP BY CustomerID, LastName, FirstName, OrderMonth
 # MAGIC ORDER BY ProductCount DESC
 
 # COMMAND ----------
@@ -528,6 +544,3 @@ df_address.write.format("delta").mode("overwrite").saveAsTable("adventure_works.
 # MAGIC ) AS pc
 # MAGIC ON pc.CustomerID = os.CustomerID
 # MAGIC ORDER BY ProductCount DESC
-
-# COMMAND ----------
-
