@@ -5,6 +5,6 @@
 
 #### Readings: SQL Language:
 - <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver16"><b>Microsoft SQL Server:</b> Transact-SQL Reference</a>
-- <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/statements?view=sql-server-ver16">Microsoft SQL Server:</b> Transact-SQL Statements</a>
-- <a href="https://docs.microsoft.com/en-us/sql/t-sql/queries/queries?view=sql-server-ver16">Microsoft SQL Server:</b> Querying Data</a>
+- <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/statements?view=sql-server-ver16"><b>Microsoft SQL Server:</b> Transact-SQL Statements</a>
+- <a href="https://docs.microsoft.com/en-us/sql/t-sql/queries/queries?view=sql-server-ver16"><b>Microsoft SQL Server:</b> Querying Data</a>
 - <a href="https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html"><b>MySQL</b> SQL Statements</a>
