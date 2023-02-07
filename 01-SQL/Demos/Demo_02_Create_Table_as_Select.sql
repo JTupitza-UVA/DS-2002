@@ -1,6 +1,8 @@
-USE Northwind_DW3;
+CREATE DATABASE `Northwind_DW_Demo` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-CREATE TABLE fact_orders2 AS
+USE Northwind_DW_Demo;
+
+CREATE TABLE fact_orders AS
 SELECT o.id,
     o.employee_id,
     o.customer_id,
