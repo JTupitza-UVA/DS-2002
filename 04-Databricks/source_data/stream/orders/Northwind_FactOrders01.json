@@ -1,0 +1,20 @@
+fact_order_key,order_key,employee_key,customer_key,product_key,shipper_key,order_date_key,paid_date_key,shipped_date_key,quantity,unit_price,discount,shipping_fee,taxes,tax_rate,payment_type,order_status,order_details_status
+1,30,9,27,34,2,20060115,20060115,20060122,100,14,0,200,0,0,Check,Closed,Invoiced
+2,30,9,27,80,2,20060115,20060115,20060122,30,3.5,0,200,0,0,Check,Closed,Invoiced
+3,31,3,4,7,1,20060120,20060120,20060122,10,30,0,5,0,0,"Credit Card",Closed,Invoiced
+4,31,3,4,51,1,20060120,20060120,20060122,10,53,0,5,0,0,"Credit Card",Closed,Invoiced
+5,31,3,4,80,1,20060120,20060120,20060122,10,3.5,0,5,0,0,"Credit Card",Closed,Invoiced
+6,32,4,12,1,2,20060122,20060122,20060122,15,18,0,5,0,0,"Credit Card",Closed,Invoiced
+7,32,4,12,43,2,20060122,20060122,20060122,20,46,0,5,0,0,"Credit Card",Closed,Invoiced
+8,33,6,8,19,3,20060130,20060130,20060131,30,9.2,0,50,0,0,"Credit Card",Closed,Invoiced
+9,34,9,4,19,3,20060206,20060206,20060207,20,9.2,0,4,0,0,Check,Closed,Invoiced
+10,35,3,29,48,2,20060210,20060210,20060212,10,12.75,0,7,0,0,Check,Closed,Invoiced
+11,36,4,3,41,2,20060223,20060223,20060225,200,9.65,0,7,0,0,Cash,Closed,Invoiced
+12,37,8,6,8,2,20060306,20060306,20060309,17,40,0,12,0,0,"Credit Card",Closed,Invoiced
+13,38,9,28,43,3,20060310,20060310,20060311,300,46,0,10,0,0,Check,Closed,Invoiced
+14,39,3,8,48,3,20060322,20060322,20060324,100,12.75,0,5,0,0,Check,Closed,Invoiced
+15,40,4,10,81,2,20060324,20060324,20060324,200,2.99,0,9,0,0,"Credit Card",Closed,Invoiced
+16,42,1,10,6,1,20060324,NULL,20060407,10,25,0,0,0,0,NULL,Shipped,Invoiced
+17,42,1,10,4,1,20060324,NULL,20060407,10,22,0,0,0,0,NULL,Shipped,Invoiced
+18,42,1,10,19,1,20060324,NULL,20060407,10,9.2,0,0,0,0,NULL,Shipped,Invoiced
+19,45,1,28,41,3,20060407,20060407,20060407,50,9.65,0,40,0,0,"Credit Card",Closed,Invoiced

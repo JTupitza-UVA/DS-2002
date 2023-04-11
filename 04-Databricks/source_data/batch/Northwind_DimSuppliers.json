@@ -1,0 +1,72 @@
+[
+	{
+		"supplier_key" : 1,
+		"company" : "Supplier A",
+		"last_name" : "Andersen",
+		"first_name" : "Elizabeth A.",
+		"job_title" : "Sales Manager"
+	},
+	{
+		"supplier_key" : 2,
+		"company" : "Supplier B",
+		"last_name" : "Weiler",
+		"first_name" : "Cornelia",
+		"job_title" : "Sales Manager"
+	},
+	{
+		"supplier_key" : 3,
+		"company" : "Supplier C",
+		"last_name" : "Kelley",
+		"first_name" : "Madeleine",
+		"job_title" : "Sales Representative"
+	},
+	{
+		"supplier_key" : 4,
+		"company" : "Supplier D",
+		"last_name" : "Sato",
+		"first_name" : "Naoki",
+		"job_title" : "Marketing Manager"
+	},
+	{
+		"supplier_key" : 5,
+		"company" : "Supplier E",
+		"last_name" : "Hernandez-Echevarria",
+		"first_name" : "Amaya",
+		"job_title" : "Sales Manager"
+	},
+	{
+		"supplier_key" : 6,
+		"company" : "Supplier F",
+		"last_name" : "Hayakawa",
+		"first_name" : "Satomi",
+		"job_title" : "Marketing Assistant"
+	},
+	{
+		"supplier_key" : 7,
+		"company" : "Supplier G",
+		"last_name" : "Glasson",
+		"first_name" : "Stuart",
+		"job_title" : "Marketing Manager"
+	},
+	{
+		"supplier_key" : 8,
+		"company" : "Supplier H",
+		"last_name" : "Dunton",
+		"first_name" : "Bryn Paul",
+		"job_title" : "Sales Representative"
+	},
+	{
+		"supplier_key" : 9,
+		"company" : "Supplier I",
+		"last_name" : "Sandberg",
+		"first_name" : "Mikael",
+		"job_title" : "Sales Manager"
+	},
+	{
+		"supplier_key" : 10,
+		"company" : "Supplier J",
+		"last_name" : "Sousa",
+		"first_name" : "Luis",
+		"job_title" : "Sales Manager"
+	}
+]

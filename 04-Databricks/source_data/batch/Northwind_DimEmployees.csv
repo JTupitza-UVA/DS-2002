@@ -1,0 +1,10 @@
+employee_key,company,last_name,first_name,email_address,job_title,business_phone,home_phone,fax_number,address,city,state_province,zip_postal_code,country_region,web_page
+1,"Northwind Traders",Freehafer,Nancy,nancy@northwindtraders.com,"Sales Representative",(123)555-0100,(123)555-0102,(123)555-0103,"123 1st Avenue",Seattle,WA,99999,USA,#http://northwindtraders.com#
+2,"Northwind Traders",Cencini,Andrew,andrew@northwindtraders.com,"Vice President, Sales",(123)555-0100,(123)555-0102,(123)555-0103,"123 2nd Avenue",Bellevue,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+3,"Northwind Traders",Kotas,Jan,jan@northwindtraders.com,"Sales Representative",(123)555-0100,(123)555-0102,(123)555-0103,"123 3rd Avenue",Redmond,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+4,"Northwind Traders",Sergienko,Mariya,mariya@northwindtraders.com,"Sales Representative",(123)555-0100,(123)555-0102,(123)555-0103,"123 4th Avenue",Kirkland,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+5,"Northwind Traders",Thorpe,Steven,steven@northwindtraders.com,"Sales Manager",(123)555-0100,(123)555-0102,(123)555-0103,"123 5th Avenue",Seattle,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+6,"Northwind Traders",Neipper,Michael,michael@northwindtraders.com,"Sales Representative",(123)555-0100,(123)555-0102,(123)555-0103,"123 6th Avenue",Redmond,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+7,"Northwind Traders",Zare,Robert,robert@northwindtraders.com,"Sales Representative",(123)555-0100,(123)555-0102,(123)555-0103,"123 7th Avenue",Seattle,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+8,"Northwind Traders",Giussani,Laura,laura@northwindtraders.com,"Sales Coordinator",(123)555-0100,(123)555-0102,(123)555-0103,"123 8th Avenue",Redmond,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#
+9,"Northwind Traders",Hellung-Larsen,Anne,anne@northwindtraders.com,"Sales Representative",(123)555-0100,(123)555-0102,(123)555-0103,"123 9th Avenue",Seattle,WA,99999,USA,http://northwindtraders.com#http://northwindtraders.com/#

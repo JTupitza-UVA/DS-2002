@@ -1,0 +1,4 @@
+shipper_key,company,address,city,state_province,zip_postal_code,country_region
+1,"Shipping Company A","123 Any Street",Memphis,TN,99999,USA
+2,"Shipping Company B","123 Any Street",Memphis,TN,99999,USA
+3,"Shipping Company C","123 Any Street",Memphis,TN,99999,USA
