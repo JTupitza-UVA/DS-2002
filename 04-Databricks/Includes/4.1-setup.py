@@ -3,14 +3,12 @@
 
 # COMMAND ----------
 
-# MAGIC %run ./mount-datasets
-
-# COMMAND ----------
-
 def autoload_to_table(data_source, source_format, table_name, checkpoint_directory):
     (spark.readStream
         .format("cloudFiles")
         .option("cloudFiles.format", source_format)
+        .option("cloudFiles.inferColumnTypes", "true")
+        .option("multiLine", "true")
         .option("cloudFiles.schemaLocation", checkpoint_directory)
         .load(data_source)
         .writeStream
@@ -25,7 +23,7 @@ def autoload_to_table(data_source, source_format, table_name, checkpoint_directo
 
 class DataFactory:
     def __init__(self):
-        self.source = "/mnt/training/healthcare/tracker/streaming/"
+        self.source = "/FileStore/lab_data/healthcare/tracker/streaming/"
         self.userdir = f"{DA.paths.working_dir}/tracker"
         self.curr_mo = 1
     
