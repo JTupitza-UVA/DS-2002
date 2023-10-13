@@ -9,7 +9,7 @@
 
 class DataFactory:
     def __init__(self):
-        self.source = f"{DA.paths.data_source}/tracker/streaming/"
+        self.source = f"/FileStore/lab_data/healthcare/tracker/streaming/"
         self.userdir = DA.paths.data_landing_location
         self.curr_mo = 1
     
@@ -36,7 +36,7 @@ class DataFactory:
 
 DA.init()
 DA.paths.checkpoints = f"{DA.paths.working_dir}/_checkpoints"    
-DA.paths.data_source = "/mnt/training/healthcare"
+DA.paths.data_source = "/FileStore/lab_data/healthcare"
 DA.paths.data_landing_location    = f"{DA.paths.working_dir}/source/tracker"
 
 # bronzePath             = f"{DA.paths.wokring_dir}/bronze"
