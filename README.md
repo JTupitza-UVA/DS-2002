@@ -12,5 +12,6 @@ This repository contains artifacts supporting the DS-2002 Data Science Systems c
 - <a href="https://youtu.be/vg7j3yWjBiw">04 - Provisioning Azure SQL Server</a>
 - <a href="https://youtu.be/krjoLZmab4I">05 - Configuring Azure SQL and Creating Databases</a>
 - <a href="https://youtu.be/egEw--odiqs">06 - Connecting to Azure SQL</a>
-- <a href="https://www.youtube.com/watch?v=xrc7dIO_tXk&list=PL31nix9tC4CWM68-V23Puu793xD7yHdSr&index=7">07 - Intro to MongoDB Atlas in 10 mins | Jumpstart</a>
-- <a href="https://www.youtube.com/watch?v=YBOiX8DwinE&list=PL31nix9tC4CWM68-V23Puu793xD7yHdSr&index=8&t=2s">08 - Compass - The GUI For MongoDB in 10 mins | Jumpstart</a>
+- <a href="https://youtu.be/IML1d9WhkFw">07 - Provisioning Azure Databricks</a>
+- <a href="https://www.youtube.com/watch?v=xrc7dIO_tXk&list=PL31nix9tC4CWM68-V23Puu793xD7yHdSr&index=7">08 - Intro to MongoDB Atlas in 10 mins | Jumpstart</a>
+- <a href="https://www.youtube.com/watch?v=YBOiX8DwinE&list=PL31nix9tC4CWM68-V23Puu793xD7yHdSr&index=8&t=2s">09 - Compass - The GUI For MongoDB in 10 mins | Jumpstart</a>
