@@ -40,6 +40,3 @@ This repository contains artifacts supporting the DS-2002 Data Science Systems c
 
 | Topic 5 | 04/17 | Integrating SQL Databases with Databricks | Activity 05: Connecting to Azure MySQL and Azure SQL from Databricks |
 | Topic 6 | 04/19 | Integrating NoSQL Databases with Databricks | Activity 06: Connecting to MongoDB Atlas from Databricks |
-
-### Resources:
-- <a href="https://docs.github.com/en/get-started/quickstart/hello-world"><b>Tutorial: </b>Getting Started with GitHub</a>
