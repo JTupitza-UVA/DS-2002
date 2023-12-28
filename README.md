@@ -28,8 +28,8 @@ This repository contains artifacts supporting the DS-2002 Data Science Systems c
 | Topic 1 | 04/01 | Introduction to Apache Spark and  the Databricks Platform | Activity 02: Configuring Databricks Clusters & the Databricks File System |
 | Topic 2 | 04/03 | Databricks SQL Language and Query Fundamentals | Activity 03: Using Databricks-SQL to Query File-based Data |
 | Topic 3 | 04/08 | Databricks Files, Databases, Tables and Views | Activity 04: Using Databricks to Create Delta Tables and Views |
-| Topic 3 | 04/10 | Data Integration & ETL Processing in Databricks | **Lab 05: Using Python to Perform Extract-Transform-Load (ETL) Processing** |
-| Topic 4 | 04/15 | Integrating Real-Time Data with Structured Streaming | **Lab 06: Incremental Updates with Structured Streaming and Delta Lake** |
+| Topic 4 | 04/10 | Integrating Real-Time Data with Structured Streaming | **Lab 05: Incremental Updates with Structured Streaming and Delta Lake** |
+| Topic 5 | 04/15 | Data Integration & ETL Processing in Databricks | **Lab 06: Using Databricks to Implement the Lambda Architecture** |
 | **Project 2:** | **04/15** | **Create a Data Lakehouse Using Databricks** | |
 | Topic 5 | 04/17 | Integrating SQL Databases with Databricks | Activity 05: Connecting to Azure MySQL and Azure SQL from Databricks |
 | Topic 6 | 04/19 | Integrating NoSQL Databases with Databricks | Activity 06: Connecting to MongoDB Atlas from Databricks |
