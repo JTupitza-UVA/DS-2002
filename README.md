@@ -3,7 +3,9 @@ This repository contains artifacts supporting the DS-2002 Data Science Systems c
 
 ### Resources:
 - <a href="https://docs.github.com/en/get-started/quickstart/hello-world"><b>Tutorial: </b>Getting Started with GitHub</a>
-- <a href="https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7">**Reading:** A Beginners Guide to Data Engineering</a>
+- <a href="https://github.com/JTupitza-UVA/DS-2002/blob/main/Beginners-Guide-to-Data-Engineering-I.pdf">**Reading:** A Beginners Guide to Data Engineering: Part I</a>
+- <a href="https://github.com/JTupitza-UVA/DS-2002/blob/main/Beginners-Guide-to-Data-Engineering-II.pdf">**Reading:** A Beginners Guide to Data Engineering: Part II</a>
+- <a href="https://github.com/JTupitza-UVA/DS-2002/blob/main/Beginners-Guide-to-Data-Engineering-III.pdf">**Reading:** A Beginners Guide to Data Engineering: Part III</a>
 
 ### Instructional Videos: Configuring Your Development Environment
 - <a href="https://youtu.be/DODgNtI7CWc">01 - Creating Resource Groups in Azure</a>
