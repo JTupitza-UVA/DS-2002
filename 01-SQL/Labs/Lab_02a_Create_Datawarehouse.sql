@@ -1,7 +1,7 @@
 # DROP database `northwind_dw`;
 CREATE DATABASE `northwind_dw` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-USE Northwind_DW3;
+USE northwind_dw;
 
 # DROP TABLE `dim_customers`;
 CREATE TABLE `dim_customers` (
