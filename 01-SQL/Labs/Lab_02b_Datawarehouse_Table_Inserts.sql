@@ -139,8 +139,8 @@ TRUNCATE TABLE `northwind_dw`.`fact_orders`;
 INSERT INTO `northwind_dw`.`fact_orders`
 (`order_key`,
 `order_id`,
-`employee_id`,
 `customer_id`,
+`employee_id`,
 `product_id`,
 `shipper_id`,
 `order_date`,
@@ -173,3 +173,19 @@ TODO: Write a SELECT Statement that:
 -- Validate that the Data was Inserted ----------
 -- ----------------------------------------------
 SELECT * FROM northwind_dw.fact_orders;
+
+
+
+-- ----------------------------------------------
+-- ----------------------------------------------
+-- Next, create the date dimension and then -----
+-- integrate the date, customer, employee -------
+-- product and shipper dimension tables ---------
+-- ----------------------------------------------
+-- ----------------------------------------------
+
+
+-- --------------------------------------------------------------------------------------------------
+-- LAB QUESTION: Author a SQL query that returns the total (sum) of the quantity and unit price
+-- for each customer (last name), sorted by the total unit price in descending order.
+-- --------------------------------------------------------------------------------------------------
