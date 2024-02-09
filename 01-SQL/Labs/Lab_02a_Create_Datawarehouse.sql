@@ -6,6 +6,7 @@ USE Northwind_DW3;
 # DROP TABLE `dim_customers`;
 CREATE TABLE `dim_customers` (
   `customer_key` int NOT NULL AUTO_INCREMENT,
+  `customer_id` int NOT NULL,
   `company` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) DEFAULT NULL,
   `first_name` varchar(50) DEFAULT NULL,
@@ -18,6 +19,7 @@ CREATE TABLE `dim_customers` (
   `zip_postal_code` varchar(15) DEFAULT NULL,
   `country_region` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`customer_key`),
+  KEY `customer_id` (`customer_id`),
   KEY `city` (`city`),
   KEY `company` (`company`),
   KEY `first_name` (`first_name`),
@@ -30,6 +32,7 @@ CREATE TABLE `dim_customers` (
 # DROP TABLE `dim_employees`;
 CREATE TABLE `dim_employees` (
   `employee_key` int NOT NULL AUTO_INCREMENT,
+  `employee_id` int NOT NULL,
   `company` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) DEFAULT NULL,
   `first_name` varchar(50) DEFAULT NULL,
@@ -45,6 +48,7 @@ CREATE TABLE `dim_employees` (
   `country_region` varchar(50) DEFAULT NULL,
   `web_page` longtext,
   PRIMARY KEY (`employee_key`),
+  KEY `employee_id` (`employee_id`),
   KEY `city` (`city`),
   KEY `company` (`company`),
   KEY `first_name` (`first_name`),
@@ -57,6 +61,7 @@ CREATE TABLE `dim_employees` (
 # DROP TABLE `dim_products`;
 CREATE TABLE `dim_products` (
   `product_key` int NOT NULL AUTO_INCREMENT,
+  `product_id` int NOT NULL,
   `product_code` varchar(25) DEFAULT NULL,
   `product_name` varchar(50) DEFAULT NULL,
   `standard_cost` decimal(19,4) DEFAULT '0.0000',
@@ -68,13 +73,17 @@ CREATE TABLE `dim_products` (
   `minimum_reorder_quantity` int DEFAULT NULL,
   `category` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`product_key`),
-  KEY `product_code` (`product_code`)
+  KEY `product_id` (`product_id`),
+  KEY `product_code` (`product_code`),
+  KEY `discontinued` (`discontinued`),
+  KEY `category` (`category`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4;
 
 
 # DROP TABLE `dim_shippers`;
 CREATE TABLE `dim_shippers` (
   `shipper_key` int NOT NULL AUTO_INCREMENT,
+  `shipper_id` int NOT NULL,
   `company` varchar(50) DEFAULT NULL,
   `address` longtext,
   `city` varchar(50) DEFAULT NULL,
@@ -82,6 +91,7 @@ CREATE TABLE `dim_shippers` (
   `zip_postal_code` varchar(15) DEFAULT NULL,
   `country_region` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`shipper_key`),
+  KEY `shipper_id` (`shipper_id`),
   KEY `city` (`city`),
   KEY `company` (`company`),
   KEY `zip_postal_code` (`zip_postal_code`),
@@ -92,11 +102,13 @@ CREATE TABLE `dim_shippers` (
 # DROP TABLE `dim_suppliers`;
 CREATE TABLE `dim_suppliers` (
   `supplier_key` int NOT NULL AUTO_INCREMENT,
+  `supplier_id` int NOT NULL,
   `company` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) DEFAULT NULL,
   `first_name` varchar(50) DEFAULT NULL,
   `job_title` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`supplier_key`),
+  KEY `supplier_id` (`supplier_id`),
   KEY `company` (`company`),
   KEY `first_name` (`first_name`),
   KEY `last_name` (`last_name`)

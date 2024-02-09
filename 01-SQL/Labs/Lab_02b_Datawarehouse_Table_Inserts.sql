@@ -5,8 +5,10 @@
 -- ----------------------------------------------
 -- Populate dim_customers
 -- ----------------------------------------------
+TRUNCATE TABLE northwind_dw.dim_customers;
+
 INSERT INTO `northwind_dw`.`dim_customers`
-(`customer_key`,
+(`customer_id`,
 `company`,
 `last_name`,
 `first_name`,
@@ -19,17 +21,17 @@ INSERT INTO `northwind_dw`.`dim_customers`
 `zip_postal_code`,
 `country_region`)
 SELECT `id`,
-`company`,
-`last_name`,
-`first_name`,
-`job_title`,
-`business_phone`,
-`fax_number`,
-`address`,
-`city`,
-`state_province`,
-`zip_postal_code`,
-`country_region`
+	`company`,
+	`last_name`,
+	`first_name`,
+	`job_title`,
+	`business_phone`,
+	`fax_number`,
+	`address`,
+	`city`,
+	`state_province`,
+	`zip_postal_code`,
+	`country_region`
 FROM northwind.customers;
 
 -- ----------------------------------------------
@@ -41,8 +43,10 @@ SELECT * FROM northwind_dw.dim_customers;
 -- ----------------------------------------------
 -- Populate dim_employees
 -- ----------------------------------------------
+TRUNCATE TABLE `northwind_dw`.`dim_employees`;
+
 INSERT INTO `northwind_dw`.`dim_employees`
-(`employee_key`,
+(`employee_id`,
 `company`,
 `last_name`,
 `first_name`,
@@ -57,21 +61,21 @@ INSERT INTO `northwind_dw`.`dim_employees`
 `zip_postal_code`,
 `country_region`,
 `web_page`)
-SELECT `employees`.`id`,
-    `employees`.`company`,
-    `employees`.`last_name`,
-    `employees`.`first_name`,
-    `employees`.`email_address`,
-    `employees`.`job_title`,
-    `employees`.`business_phone`,
-    `employees`.`home_phone`,
-    `employees`.`fax_number`,
-    `employees`.`address`,
-    `employees`.`city`,
-    `employees`.`state_province`,
-    `employees`.`zip_postal_code`,
-    `employees`.`country_region`,
-    `employees`.`web_page`
+SELECT `id`,
+    `company`,
+    `last_name`,
+    `first_name`,
+    `email_address`,
+    `job_title`,
+    `business_phone`,
+    `home_phone`,
+    `fax_number`,
+    `address`,
+    `city`,
+    `state_province`,
+    `zip_postal_code`,
+    `country_region`,
+    `web_page`
 FROM `northwind`.`employees`;
 
 -- ----------------------------------------------
@@ -83,8 +87,10 @@ SELECT * FROM northwind_dw.dim_employees;
 -- ----------------------------------------------
 -- Populate dim_products
 -- ----------------------------------------------
+TRUNCATE TABLE `northwind_dw`.`dim_products`;
+
 INSERT INTO `northwind_dw`.`dim_products`
-(`product_key`,
+(`product_id`,
 `product_code`,
 `product_name`,
 `standard_cost`,
@@ -106,8 +112,10 @@ SELECT * FROM northwind_dw.dim_products;
 -- ----------------------------------------------
 -- Populate dim_shippers
 -- ----------------------------------------------
+TRUNCATE TABLE `northwind_dw`.`dim_shippers`;
+
 INSERT INTO `northwind_dw`.`dim_shippers`
-(`shipper_key`,
+(`shipper_id`,
 `company`,
 `address`,
 `city`,
@@ -126,30 +134,28 @@ SELECT * FROM northwind_dw.dim_shippers;
 -- ----------------------------------------------
 -- Populate fact_orders
 -- ----------------------------------------------
+TRUNCATE TABLE `northwind_dw`.`fact_orders`;
+
 INSERT INTO `northwind_dw`.`fact_orders`
 (`order_key`,
-`employee_key`,
-`customer_key`,
-`product_key`,
-`shipper_key`,
-`ship_name`,
-`ship_address`,
-`ship_city`,
-`ship_state_province`,
-`ship_zip_postal_code`,
-`ship_country_region`,
-`quantity`,
+`order_id`,
+`employee_id`,
+`customer_id`,
+`product_id`,
+`shipper_id`,
 `order_date`,
+`paid_date`,
 `shipped_date`,
+`payment_type`,
+`shipping_fee`,
+`quantity`,
 `unit_price`,
 `discount`,
-`shipping_fee`,
 `taxes`,
-`payment_type`,
-`paid_date`,
 `tax_rate`,
 `order_status`,
-`order_details_status`)
+`order_details_status`);
+
 /* 
 --------------------------------------------------------------------------------------------------
 TODO: Write a SELECT Statement that:
