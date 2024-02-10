@@ -137,8 +137,7 @@ SELECT * FROM northwind_dw.dim_shippers;
 TRUNCATE TABLE `northwind_dw`.`fact_orders`;
 
 INSERT INTO `northwind_dw`.`fact_orders`
-(`order_key`,
-`order_id`,
+(`order_id`,
 `customer_id`,
 `employee_id`,
 `product_id`,
