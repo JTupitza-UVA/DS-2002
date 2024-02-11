@@ -26,7 +26,7 @@ CREATE TABLE dim_date(
  fiscal_year_month char(10) NOT NULL,
  fiscal_year_qtr char(10) NOT NULL,
   PRIMARY KEY (`date_key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 # Here is the PopulateDateDimension Stored Procedure: 
 delimiter //
@@ -132,7 +132,7 @@ BEGIN
 	END WHILE;
 END//
 
-CALL PopulateDateDimension('2000/01/01', '2010/12/31');
+CALL PopulateDateDimension('2000-01-01', '2010-12-31');
 
 SELECT MIN(full_date) AS BeginDate
 	, MAX(full_date) AS EndDate
