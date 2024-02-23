@@ -9,3 +9,6 @@
 - <a href="https://www.geeksforgeeks.org/python-mysql/"><b>Tutorial:</b> Working with the Python MySQL Connector</a>
 - <a href="https://www.sqlalchemy.org/"><b>Documentation:</b> SQL Alchemy: The Python SQL Toolkit and Object Relational Mapper</a>
 - <a href="https://github.com/public-apis/public-apis#open-data">Public API's: A collective list of free APIs for use in software and web development</a>
+
+### Tutorials:
+- <a href="https://youtu.be/Tw49Y2isCZw?si=eGRBhfxQI1ub_O2S">Lab 3: Using Python to Perform Extract-Transform-Load (ETL) Processing </a>
