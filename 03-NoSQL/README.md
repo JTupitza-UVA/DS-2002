@@ -7,3 +7,5 @@
 - <a href="https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/"><b>Software:</b> Install MongoDB on MacOS</a>
 - <a href="https://www.mongodb.com/cloud/atlas/register"><b>Software:</b> Get Started with MongoDB Atlas (MongoDB Cloud Service)</a>
 - <a href="https://www.mongodb.com/resources/channel/basics"><b>Tutorials:</b> Videos and Other Learning Resources from MongoDB</a>
+- <a href="https://www.mongodb.com/developer/products/atlas/atlas-sample-datasets/"><b>Sample Data:</b> Atlas Sample Datasets</a>
+
