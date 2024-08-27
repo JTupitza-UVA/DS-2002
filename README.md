@@ -8,7 +8,7 @@ This repository contains artifacts supporting the DS-2002 Data Science Systems c
 - <a href="https://github.com/JTupitza-UVA/DS-2002/blob/main/Beginners-Guide-to-Data-Engineering-III.pdf">**Reading:** A Beginners Guide to Data Engineering: Part III</a>
 
 ### Instructional Videos: Configuring Your Development Environment
-- <a href="https://www.youtube.com/watch?v=s-1lppthRV0">01 - Installing MySQL Server on MacOS</a>
+- <a href="https://youtu.be/s-1lppthRV0">01 - Installing MySQL Server on MacOS</a>
 - <a href="https://youtu.be/5tHEbMUgjUE">02 - Provisioning Azure MySQL Server</a>
 - <a href="https://youtu.be/lpFoakAboik">03 - Connecting to Azure MySQL and Creating Databases</a>
 - <a href="https://youtu.be/vg7j3yWjBiw">04 - Provisioning Azure SQL Server</a>
