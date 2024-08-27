@@ -1,3 +1,6 @@
+#### Videos: MySQL Installation:
+- <a href="https://www.youtube.com/watch?v=s-1lppthRV0">Demo: Installing MySQL on MacOS</a>
+
 #### Readings: SQL Database Design:
 - <a href="https://docs.microsoft.com/en-us/sql/relational-databases/databases/databases?view=sql-server-ver16">Databases</a>
 - <a href="https://docs.microsoft.com/en-us/sql/relational-databases/tables/tables?view=sql-server-ver16">Tables</a>
