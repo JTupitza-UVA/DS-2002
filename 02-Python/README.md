@@ -11,4 +11,6 @@
 - <a href="https://github.com/public-apis/public-apis#open-data">Public API's: A collective list of free APIs for use in software and web development</a>
 
 ### Tutorials:
+- <a href="https://youtu.be/7vMM2809l4Q">Demo: 01 Python Fundamentals</a>
+- <a href="https://youtu.be/VU7O61bfYwQ">Demo: 02 Accessing MySQL with Python</a>
 - <a href="https://youtu.be/Tw49Y2isCZw?si=eGRBhfxQI1ub_O2S">Lab 3: Using Python to Perform Extract-Transform-Load (ETL) Processing </a>
