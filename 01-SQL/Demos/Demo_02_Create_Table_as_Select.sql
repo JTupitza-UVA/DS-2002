@@ -35,4 +35,4 @@ INNER JOIN northwind.order_details_status AS ods
 ON od.status_id = ods.id;
 
 
-SELECT * FROM northwind_dw3.fact_orders2;
+SELECT * FROM Northwind_DW_Demo.fact_orders;
