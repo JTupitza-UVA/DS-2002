@@ -44,12 +44,10 @@
 -- --------------------------------------------------------------------------------------
 
 
-
 -- --------------------------------------------------------------------------------------
 -- 8). Fetch the Product Name & List Price Costing Above Average List Price
 --     Sort the results with the most expensive Products first.				| 0.33 pt.
 -- --------------------------------------------------------------------------------------
-
 
 
 -- --------------------------------------------------------------------------------------
@@ -59,15 +57,8 @@
 -- --------------------------------------------------------------------------------------
 UPDATE northwind.products SET discontinued = 1 WHERE id IN (95, 96, 97);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 -- TODO: Insert query here.
-=======
--- TODO: Your answer here.
->>>>>>> Stashed changes
-=======
--- TODO: Your answer here.
->>>>>>> Stashed changes
+
 
 UPDATE northwind.products SET discontinued = 0 WHERE id in (95, 96, 97);
 
@@ -77,11 +68,9 @@ UPDATE northwind.products SET discontinued = 0 WHERE id in (95, 96, 97);
 -- --------------------------------------------------------------------------------------
 
 
-
 -- --------------------------------------------------------------------------------------
 -- 11). Fetch the Number of Products per Category Priced Less Than $20.00	| 0.33 pt
 -- --------------------------------------------------------------------------------------
-
 
 
 -- --------------------------------------------------------------------------------------
@@ -89,43 +78,20 @@ UPDATE northwind.products SET discontinued = 0 WHERE id in (95, 96, 97);
 -- --------------------------------------------------------------------------------------
 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 -- ----------------------------------------------------------------------------
 -- 13). Fetch Products along with their Supplier Company & Address Info
 -- ----------------------------------------------------------------------------
-=======
-=======
->>>>>>> Stashed changes
+
 
 -- --------------------------------------------------------------------------------------
 -- 13). Fetch Products along with their Supplier Company & Address Info		| 0.5 pt
 -- --------------------------------------------------------------------------------------
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-
 
 
 -- --------------------------------------------------------------------------------------
 -- 14). Fetch the Customer ID and Full Name for All Customers along with
 -- 		the Order ID and Order Date for Any Orders they may have			| 0.5 pt
 -- --------------------------------------------------------------------------------------
-<<<<<<< Updated upstream
-
-
-<<<<<<< Updated upstream
--- ----------------------------------------------------------------------------
-=======
-
--- --------------------------------------------------------------------------------------
->>>>>>> Stashed changes
--- 15). Fetch the Order ID and Order Date for All Orders along with
---   	the Customr ID and Full Name for Any Associated Customers			| 0.5 pt
--- --------------------------------------------------------------------------------------
-=======
-
 
 
 -- --------------------------------------------------------------------------------------
@@ -133,6 +99,5 @@ UPDATE northwind.products SET discontinued = 0 WHERE id in (95, 96, 97);
 --   	the Customr ID and Full Name for Any Associated Customers			| 0.5 pt
 -- --------------------------------------------------------------------------------------
 
->>>>>>> Stashed changes
 
 
