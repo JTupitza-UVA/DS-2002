@@ -85,12 +85,6 @@ CREATE TABLE `dim_products` (
 # DROP TABLE `dim_shippers`;
 
 
-# ----------------------------------------------------------
-# TODO: CREATE the `dim_suppliers` dimension table ---------
-# ----------------------------------------------------------
-# DROP TABLE `dim_suppliers`;
-
-
 # ----------------------------------------------------------------------
 # TODO: JOIN the orders, order_details, order_details_status and 
 #       orders_status tables to create a new Fact Table in Northwind_DW.
