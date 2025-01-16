@@ -79,46 +79,21 @@ CREATE TABLE `dim_products` (
   KEY `category` (`category`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4;
 
-
+# ----------------------------------------------------------
+# TODO: CREATE the `dim_shippers` dimension table ----------
+# ----------------------------------------------------------
 # DROP TABLE `dim_shippers`;
-CREATE TABLE `dim_shippers` (
-  `shipper_key` int NOT NULL AUTO_INCREMENT,
-  `shipper_id` int NOT NULL,
-  `company` varchar(50) DEFAULT NULL,
-  `address` longtext,
-  `city` varchar(50) DEFAULT NULL,
-  `state_province` varchar(50) DEFAULT NULL,
-  `zip_postal_code` varchar(15) DEFAULT NULL,
-  `country_region` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`shipper_key`),
-  KEY `shipper_id` (`shipper_id`),
-  KEY `city` (`city`),
-  KEY `company` (`company`),
-  KEY `zip_postal_code` (`zip_postal_code`),
-  KEY `state_province` (`state_province`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 
+# ----------------------------------------------------------
+# TODO: CREATE the `dim_suppliers` dimension table ---------
+# ----------------------------------------------------------
 # DROP TABLE `dim_suppliers`;
-CREATE TABLE `dim_suppliers` (
-  `supplier_key` int NOT NULL AUTO_INCREMENT,
-  `supplier_id` int NOT NULL,
-  `company` varchar(50) DEFAULT NULL,
-  `last_name` varchar(50) DEFAULT NULL,
-  `first_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`supplier_key`),
-  KEY `supplier_id` (`supplier_id`),
-  KEY `company` (`company`),
-  KEY `first_name` (`first_name`),
-  KEY `last_name` (`last_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 
--- ----------------------------------------------------------------------
--- TODO: JOIN the orders, order_details, order_details_status and 
---       orders_status tables to create a new Fact Table in Northwind_DW.
--- To keep things simple, don't include purchase order or inventory info
--- ----------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# TODO: JOIN the orders, order_details, order_details_status and 
+#       orders_status tables to create a new Fact Table in Northwind_DW.
+# To keep things simple, don't include purchase order or inventory info
+# ----------------------------------------------------------------------
 # DROP TABLE `fact_orders`;
-CREATE TABLE `fact_orders`;
