@@ -1,4 +1,4 @@
-# DROP database `northwind_dw`;
+DROP database `northwind_dw`;
 CREATE DATABASE `northwind_dw` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE northwind_dw;
@@ -83,6 +83,7 @@ CREATE TABLE `dim_products` (
 # TODO: CREATE the `dim_shippers` dimension table ----------
 # ----------------------------------------------------------
 # DROP TABLE `dim_shippers`;
+
 
 
 # ----------------------------------------------------------------------

@@ -153,7 +153,7 @@ INSERT INTO `northwind_dw`.`fact_orders`
 `taxes`,
 `tax_rate`,
 `order_status`,
-`order_details_status`);
+`order_details_status`)
 
 /* 
 --------------------------------------------------------------------------------------------------
