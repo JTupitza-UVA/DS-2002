@@ -1,0 +1,274 @@
+[
+	{
+		"inventory_transaction_id" : 69,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-22 16:11:39",
+		"transaction_modified_date" : "2006-03-24 11:00:55",
+		"product_id" : 19,
+		"quantity" : 20
+	},
+	{
+		"inventory_transaction_id" : 70,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-22 16:11:56",
+		"transaction_modified_date" : "2006-03-24 10:59:41",
+		"product_id" : 48,
+		"quantity" : 10
+	},
+	{
+		"inventory_transaction_id" : 71,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-22 16:12:29",
+		"transaction_modified_date" : "2006-03-24 10:57:38",
+		"product_id" : 8,
+		"quantity" : 17
+	},
+	{
+		"inventory_transaction_id" : 72,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-03-24 10:41:30",
+		"transaction_modified_date" : "2006-03-24 10:41:30",
+		"product_id" : 81,
+		"quantity" : 200
+	},
+	{
+		"inventory_transaction_id" : 73,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 10:41:33",
+		"transaction_modified_date" : "2006-03-24 10:41:42",
+		"product_id" : 81,
+		"quantity" : 200
+	},
+	{
+		"inventory_transaction_id" : 74,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-03-24 10:53:13",
+		"transaction_modified_date" : "2006-03-24 10:53:13",
+		"product_id" : 48,
+		"quantity" : 100
+	},
+	{
+		"inventory_transaction_id" : 75,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 10:53:16",
+		"transaction_modified_date" : "2006-03-24 10:55:46",
+		"product_id" : 48,
+		"quantity" : 100
+	},
+	{
+		"inventory_transaction_id" : 76,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-03-24 10:53:36",
+		"transaction_modified_date" : "2006-03-24 10:53:36",
+		"product_id" : 43,
+		"quantity" : 300
+	},
+	{
+		"inventory_transaction_id" : 77,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 10:53:39",
+		"transaction_modified_date" : "2006-03-24 10:56:57",
+		"product_id" : 43,
+		"quantity" : 300
+	},
+	{
+		"inventory_transaction_id" : 78,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-03-24 10:54:04",
+		"transaction_modified_date" : "2006-03-24 10:54:04",
+		"product_id" : 41,
+		"quantity" : 200
+	},
+	{
+		"inventory_transaction_id" : 79,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 10:54:07",
+		"transaction_modified_date" : "2006-03-24 10:58:40",
+		"product_id" : 41,
+		"quantity" : 200
+	},
+	{
+		"inventory_transaction_id" : 80,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-03-24 10:54:33",
+		"transaction_modified_date" : "2006-03-24 10:54:33",
+		"product_id" : 19,
+		"quantity" : 30
+	},
+	{
+		"inventory_transaction_id" : 81,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 10:54:35",
+		"transaction_modified_date" : "2006-03-24 11:02:02",
+		"product_id" : 19,
+		"quantity" : 30
+	},
+	{
+		"inventory_transaction_id" : 82,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-03-24 10:54:58",
+		"transaction_modified_date" : "2006-03-24 10:54:58",
+		"product_id" : 34,
+		"quantity" : 100
+	},
+	{
+		"inventory_transaction_id" : 83,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 10:55:02",
+		"transaction_modified_date" : "2006-03-24 11:03:00",
+		"product_id" : 34,
+		"quantity" : 100
+	},
+	{
+		"inventory_transaction_id" : 84,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:48:15",
+		"transaction_modified_date" : "2006-04-04 11:41:14",
+		"product_id" : 6,
+		"quantity" : 10
+	},
+	{
+		"inventory_transaction_id" : 85,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:48:23",
+		"transaction_modified_date" : "2006-04-04 11:41:14",
+		"product_id" : 4,
+		"quantity" : 10
+	},
+	{
+		"inventory_transaction_id" : 86,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-24 14:49:16",
+		"transaction_modified_date" : "2006-03-24 14:49:16",
+		"product_id" : 80,
+		"quantity" : 20
+	},
+	{
+		"inventory_transaction_id" : 87,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-24 14:49:20",
+		"transaction_modified_date" : "2006-03-24 14:49:20",
+		"product_id" : 81,
+		"quantity" : 50
+	},
+	{
+		"inventory_transaction_id" : 88,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-24 14:50:09",
+		"transaction_modified_date" : "2006-03-24 14:50:09",
+		"product_id" : 1,
+		"quantity" : 25
+	},
+	{
+		"inventory_transaction_id" : 89,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-24 14:50:14",
+		"transaction_modified_date" : "2006-03-24 14:50:14",
+		"product_id" : 43,
+		"quantity" : 25
+	},
+	{
+		"inventory_transaction_id" : 90,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-24 14:50:18",
+		"transaction_modified_date" : "2006-03-24 14:50:18",
+		"product_id" : 81,
+		"quantity" : 25
+	},
+	{
+		"inventory_transaction_id" : 91,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:51:03",
+		"transaction_modified_date" : "2006-04-04 11:09:24",
+		"product_id" : 40,
+		"quantity" : 50
+	},
+	{
+		"inventory_transaction_id" : 92,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:55:03",
+		"transaction_modified_date" : "2006-04-04 11:06:56",
+		"product_id" : 21,
+		"quantity" : 20
+	},
+	{
+		"inventory_transaction_id" : 93,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:55:39",
+		"transaction_modified_date" : "2006-04-04 11:06:13",
+		"product_id" : 5,
+		"quantity" : 25
+	},
+	{
+		"inventory_transaction_id" : 94,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:55:52",
+		"transaction_modified_date" : "2006-04-04 11:06:13",
+		"product_id" : 41,
+		"quantity" : 30
+	},
+	{
+		"inventory_transaction_id" : 95,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-03-24 14:56:09",
+		"transaction_modified_date" : "2006-04-04 11:06:13",
+		"product_id" : 40,
+		"quantity" : 30
+	},
+	{
+		"inventory_transaction_id" : 96,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-30 16:46:34",
+		"transaction_modified_date" : "2006-03-30 16:46:34",
+		"product_id" : 34,
+		"quantity" : 12
+	},
+	{
+		"inventory_transaction_id" : 97,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-30 17:23:27",
+		"transaction_modified_date" : "2006-03-30 17:23:27",
+		"product_id" : 34,
+		"quantity" : 10
+	},
+	{
+		"inventory_transaction_id" : 98,
+		"transaction_type" : "On Hold",
+		"transaction_created_date" : "2006-03-30 17:24:33",
+		"transaction_modified_date" : "2006-03-30 17:24:33",
+		"product_id" : 34,
+		"quantity" : 1
+	},
+	{
+		"inventory_transaction_id" : 99,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-04-03 13:50:08",
+		"transaction_modified_date" : "2006-04-03 13:50:15",
+		"product_id" : 48,
+		"quantity" : 10
+	},
+	{
+		"inventory_transaction_id" : 100,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-04-04 11:00:54",
+		"transaction_modified_date" : "2006-04-04 11:00:54",
+		"product_id" : 57,
+		"quantity" : 100
+	},
+	{
+		"inventory_transaction_id" : 101,
+		"transaction_type" : "Sold",
+		"transaction_created_date" : "2006-04-04 11:00:56",
+		"transaction_modified_date" : "2006-04-04 11:08:49",
+		"product_id" : 57,
+		"quantity" : 100
+	},
+	{
+		"inventory_transaction_id" : 102,
+		"transaction_type" : "Purchased",
+		"transaction_created_date" : "2006-04-04 11:01:14",
+		"transaction_modified_date" : "2006-04-04 11:01:14",
+		"product_id" : 34,
+		"quantity" : 50
+	}
+]

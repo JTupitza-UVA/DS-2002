@@ -1,0 +1,5 @@
+Distributable Code for the Microsoft JDBC Driver for SQL Server
+
+The entire package may be redistributed.
+
+For the latest version of this REDIST file, please visit https://aka.ms/jdbceularedist
