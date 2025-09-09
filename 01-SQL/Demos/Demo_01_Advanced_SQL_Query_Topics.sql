@@ -31,35 +31,50 @@ SELECT COUNT(*) AS CustomerCount FROM northwind.customers;  -- 29
 SELECT COUNT(*) AS OrderCount FROM northwind.orders;        -- 48
 
 -- Fetch All Customers and Any Orders they may have -------------
-SELECT COUNT(*) FROM (
-	SELECT c.id AS customer_id, c.last_name
+SELECT customer_id, customer_name -- , order_date
+	, COUNT(*) AS order_count
+FROM (
+
+	SELECT c.id AS customer_id
+		, CONCAT(last_name, ", ", first_name) AS customer_name
 		, o.id AS order_id, o.order_date
 	FROM northwind.customers AS c
 	LEFT OUTER JOIN northwind.orders AS o
 	ON c.id = o.customer_id
-	ORDER BY customer_id
-) AS co;
+    
+) AS co
+GROUP BY customer_id, customer_name -- , order_date
+ORDER BY order_count DESC, customer_name ASC;
 
 -- Fetch Customers with Corresponding Orders --------------------
 WITH CustomerOrdersCTE AS (
-	SELECT c.id AS customer_id, c.last_name
+	SELECT c.id AS customer_id
+		, CONCAT(last_name, ", ", first_name) AS customer_name
 		, o.id AS order_id, o.order_date
 	FROM northwind.customers AS c
 	INNER JOIN northwind.orders AS o
 	ON c.id = o.customer_id
-	ORDER BY customer_id
 )
-SELECT COUNT(*) FROM (CustomerOrdersCTE);
+SELECT customer_id, customer_name
+	, COUNT(*) AS order_count
+FROM CustomerOrdersCTE
+GROUP BY customer_id, customer_name
+ORDER BY order_count DESC, customer_name ASC;
 
 -- Fetch Orders and Any Customers -------------------------------
-SELECT COUNT(*) FROM (
-	SELECT c.id AS customer_id, c.last_name
+SELECT customer_id, customer_name -- , order_date
+	, COUNT(*) AS order_count
+FROM (
+
+	SELECT c.id AS customer_id, CONCAT(last_name, ", ", first_name) AS customer_name
 		, o.id AS order_id, o.order_date
 	FROM northwind.customers AS c
 	RIGHT OUTER JOIN northwind.orders AS o
 	ON c.id = o.customer_id
-	ORDER BY customer_id
-) AS co;
+	
+) AS co
+GROUP BY customer_id, customer_name
+ORDER BY order_count DESC, customer_name ASC;
 
 
 -- -------------------------------------------------------------------------
