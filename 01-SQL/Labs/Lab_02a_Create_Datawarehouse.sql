@@ -3,7 +3,7 @@ CREATE DATABASE `northwind_dw` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016
 
 USE northwind_dw;
 
-# DROP TABLE `dim_customers`;
+DROP TABLE IF EXISTS `dim_customers`;
 CREATE TABLE `dim_customers` (
   `customer_key` int NOT NULL AUTO_INCREMENT,
   `customer_id` int NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE `dim_customers` (
 ) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4;
 
 
-# DROP TABLE `dim_employees`;
+DROP TABLE IF EXISTS `dim_employees`;
 CREATE TABLE `dim_employees` (
   `employee_key` int NOT NULL AUTO_INCREMENT,
   `employee_id` int NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE `dim_employees` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
 
 
-# DROP TABLE `dim_products`;
+DROP TABLE IF EXISTS `dim_products`;
 CREATE TABLE `dim_products` (
   `product_key` int NOT NULL AUTO_INCREMENT,
   `product_id` int NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE `dim_products` (
 # ----------------------------------------------------------
 # TODO: CREATE the `dim_shippers` dimension table ----------
 # ----------------------------------------------------------
-# DROP TABLE `dim_shippers`;
+DROP TABLE IF EXISTS `dim_shippers`;
 
 
 
@@ -91,4 +91,4 @@ CREATE TABLE `dim_products` (
 #       orders_status tables to create a new Fact Table in Northwind_DW.
 # To keep things simple, don't include purchase order or inventory info
 # ----------------------------------------------------------------------
-# DROP TABLE `fact_orders`;
+DROP TABLE IF EXISTS `fact_orders`;
