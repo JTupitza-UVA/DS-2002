@@ -138,22 +138,24 @@ TRUNCATE TABLE `northwind_dw`.`fact_orders`;
 
 INSERT INTO `northwind_dw`.`fact_orders`
 (`order_id`,
-`customer_id`,
+`order_detail_id`,
 `employee_id`,
+`customer_id`,
 `product_id`,
 `shipper_id`,
 `order_date`,
 `paid_date`,
 `shipped_date`,
 `payment_type`,
-`shipping_fee`,
 `quantity`,
 `unit_price`,
 `discount`,
+`shipping_fee`,
 `taxes`,
 `tax_rate`,
 `order_status`,
 `order_details_status`)
+
 
 /* 
 --------------------------------------------------------------------------------------------------
