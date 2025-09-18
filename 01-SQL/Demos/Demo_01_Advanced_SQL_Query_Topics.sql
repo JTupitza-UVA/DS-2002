@@ -1,15 +1,15 @@
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 -- DERIVED TABLE EXPRESSION: Scope of Alias is this Outer Query ONLY 
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 SELECT o.* FROM (
 	SELECT id AS order_id, customer_id, employee_id, order_date
 	FROM northwind.orders
 ) AS o
 ORDER BY order_date DESC;
     
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 -- COMMON TABLE EXPRESSION: Scope of Alias is all subsequent queries in batch
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 WITH OrdersCTE AS (
 	SELECT id AS order_id, customer_id, employee_id, order_date
 	FROM northwind.orders
@@ -24,13 +24,13 @@ WITH OrdersCTE (order_id, customer_id, employee_id, order_date) AS (
 SELECT * FROM OrdersCTE ORDER BY order_date DESC;
 
 
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 -- JOINING Tables: 
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 SELECT COUNT(*) AS CustomerCount FROM northwind.customers;  -- 29
 SELECT COUNT(*) AS OrderCount FROM northwind.orders;        -- 48
 
--- Fetch All Customers and Any Orders they may have -------------
+-- Fetch All Customers and Any Orders they may have -----------------------------------
 SELECT customer_id, customer_name -- , order_date
 	, COUNT(*) AS order_count
 FROM (
@@ -46,7 +46,7 @@ FROM (
 GROUP BY customer_id, customer_name -- , order_date
 ORDER BY order_count DESC, customer_name ASC;
 
--- Fetch Customers with Corresponding Orders --------------------
+-- Fetch Customers with Corresponding Orders ------------------------------------------
 WITH CustomerOrdersCTE AS (
 	SELECT c.id AS customer_id
 		, CONCAT(last_name, ", ", first_name) AS customer_name
@@ -61,7 +61,7 @@ FROM CustomerOrdersCTE
 GROUP BY customer_id, customer_name
 ORDER BY order_count DESC, customer_name ASC;
 
--- Fetch Orders and Any Customers -------------------------------
+-- Fetch Orders and Any Customers ----------------------------------------------------
 SELECT customer_id, customer_name -- , order_date
 	, COUNT(*) AS order_count
 FROM (
@@ -77,9 +77,9 @@ GROUP BY customer_id, customer_name
 ORDER BY order_count DESC, customer_name ASC;
 
 
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 -- SET-BASED OPERATIONS: UNION (Distinct Rows)
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 SELECT COUNT(*) FROM (
 
 	SELECT city, state_province, country_region
@@ -90,9 +90,9 @@ SELECT COUNT(*) FROM (
     
 ) AS distinct_addresses;
 
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 -- SET-BASED OPERATIONS: UNION ALL (Keeps Duplicates)
--- -------------------------------------------------------------------------
+-- ------------------------------------------------------------------------------------
 SELECT COUNT(*) FROM (
 
 	SELECT city, state_province, country_region
@@ -102,6 +102,32 @@ SELECT COUNT(*) FROM (
 	FROM northwind.customers
     
 ) AS all_addresses;
+
+-- ------------------------------------------------------------------------------------
+-- SET-BASED OPERATIONS: INTERSECT (Common Rows from Both tables - Omits Duplicates)
+-- ------------------------------------------------------------------------------------
+SELECT COUNT(*) FROM (
+
+	SELECT city, state_province, country_region
+	FROM northwind.employees
+	INTERSECT
+	SELECT city, state_province, country_region
+	FROM northwind.customers
+    
+) AS common_addresses;
+
+-- ------------------------------------------------------------------------------------
+-- SET-BASED OPERATIONS: EXCEPT (Rows from Table A not also in Table B - No Duplicates)
+-- ------------------------------------------------------------------------------------
+SELECT COUNT(*) FROM (
+
+	SELECT city, state_province, country_region
+	FROM northwind.employees
+	EXCEPT
+	SELECT city, state_province, country_region
+	FROM northwind.customers
+    
+) AS exclusive_addresses;
 
 
 -- -------------------------------------------------------------------------
