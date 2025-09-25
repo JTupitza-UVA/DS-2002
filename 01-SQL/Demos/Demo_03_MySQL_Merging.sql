@@ -89,7 +89,7 @@ BEGIN
 			state_province = state_province,
 			zip_postal_code = zip_postal_code,
 			country_region = country_region
-        WHERE customer_key = customer_key;
+        WHERE customer_key = cust_key;
     ELSE
         INSERT INTO northwind_dw.dim_customers (
 			customer_id
@@ -128,9 +128,9 @@ DELIMITER ;
 -- Changes Area Code and 'Zip_Postal_Code' to accurate values.
 CALL merge_customers(29, 29, 'Company CC', 'Lee', 'Soo Jung', 'Purchasing Manager', '(123)555-0100', '(123)555-0101', '789 29th Street', 'Denver', 'CO', '99999', 'USA');
 -- Creates a New Customer Record
-CALL merge_customers(30, 30, 'Company DD', 'McCartney', 'Paul', 'Purchasing Manager', '(703)555-1234', '(703)555-1212', '258 30th Street', 'Alexandria', 'VA' '22314', 'USA');
+CALL merge_customers(30, 30, 'Company DD', 'McCartney', 'Paul', 'Purchasing Manager', '(703)555-1234', '(703)555-1212', '258 30th Street', 'Alexandria', 'VA', '22314', 'USA');
 
 
 -- Unit Test the Results ----------------------    
 SELECT * FROM northwind_dw.dim_customers
-WHERE customer_key IN (29, 30);
+WHERE customer_key >= 29;
