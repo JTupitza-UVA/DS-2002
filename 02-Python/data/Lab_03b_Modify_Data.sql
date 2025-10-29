@@ -94,10 +94,10 @@ WHERE id = 9;
 -- --------------------------------------------------
 -- Next Insert Two New Employees
 -- --------------------------------------------------
-INSERT INTO `employees` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
+INSERT INTO northwind.employees (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
 VALUES (10, 'Northwind Traders', 'Richards', 'Keith', 'keith@northwindtraders.com', 'Sales Coordinator', '(425)555-0100', '(425)555-0102', NULL, '(425)555-0103', '123 10th Avenue', 'Redmond', 'WA', '98053', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Reads and writes French.', '');
 
-INSERT INTO `employees` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
+INSERT INTO northwind.employees (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
 VALUES (11, 'Northwind Traders', 'Jagger', 'Mick', 'mick@northwindtraders.com', 'Sales Representative', '(564)555-0100', '(564)555-0102', NULL, '(564)555-0103', '123 11th Avenue', 'Seattle', 'WA', '98101', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Fluent in French and German.', '');
 
 -----------------------------------------------------
@@ -149,11 +149,11 @@ WHERE id = 99;
 -- --------------------------------------------------
 -- Next Insert Two New Products
 -- --------------------------------------------------
-INSERT INTO `products` (`supplier_ids`, `id`, `product_code`, `product_name`, `description`, `standard_cost`, `list_price`, `reorder_level`, `target_level`, `quantity_per_unit`, `discontinued`, `minimum_reorder_quantity`, `category`, `attachments`)
-VALUES ('6', 100, 'NWTSO-100', 'Northwind Traders Ministrone Soup', 'Savory Traditional Vegetarian Soup', 1, 1.89, 100, 200, NULL, 0, NULL, 'Soups', '');
+INSERT INTO northwind.products (`supplier_ids`, `id`, `product_code`, `product_name`, `description`, `standard_cost`, `list_price`, `reorder_level`, `target_level`, `quantity_per_unit`, `discontinued`, `minimum_reorder_quantity`, `category`, `attachments`)
+VALUES ('6', 100, 'NWTSO-100', 'Northwind Traders Ministrone Soup', 'Savory Traditional Vegetarian Soup', 1, 1.89, 100, 200, 25, 0, 100, 'Soups', '');
 
-INSERT INTO `products` (`supplier_ids`, `id`, `product_code`, `product_name`, `description`, `standard_cost`, `list_price`, `reorder_level`, `target_level`, `quantity_per_unit`, `discontinued`, `minimum_reorder_quantity`, `category`, `attachments`)
-VALUES ('6', 101, 'NWTSO-101', 'Northwind Traders Italian Wedding Soup', 'Savory Traditional Soup with Meatballs', 1, 1.95, 100, 200, NULL, 0, NULL, 'Soups', '');
+INSERT INTO northwind.products (`supplier_ids`, `id`, `product_code`, `product_name`, `description`, `standard_cost`, `list_price`, `reorder_level`, `target_level`, `quantity_per_unit`, `discontinued`, `minimum_reorder_quantity`, `category`, `attachments`)
+VALUES ('6', 101, 'NWTSO-101', 'Northwind Traders Italian Wedding Soup', 'Savory Traditional Soup with Meatballs', 1, 1.95, 100, 200, 25, 0, 100, 'Soups', '');
 
 -----------------------------------------------------
 -- Verify the Changes Were Made
@@ -204,10 +204,10 @@ WHERE id = 3;
 -- --------------------------------------------------
 -- Next Insert Two New Shippers
 -- --------------------------------------------------
-INSERT INTO `shippers` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
+INSERT INTO northwind.shippers (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
 VALUES (4, 'Shipping Company D', 'Jones', 'John-Paul', 'jjones@companyd.com', 'Shipping Agent', '(901)343-0100', NULL, NULL, '(901)343-0101', '123 4th Street', 'Memphis', 'TN', '37544', 'USA', NULL, NULL, '');
 
-INSERT INTO `shippers` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
+INSERT INTO northwind.shippers (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`)
 VALUES (5, 'Shipping Company E', 'Page', 'Jimmy', 'jpage@companye.com', 'Shipping Agent', '(901)656-0100', NULL, NULL, '(901)656-0101', '123 5th Street', 'Memphis', 'TN', '37544', 'USA', NULL, NULL, '');
 
 -----------------------------------------------------
