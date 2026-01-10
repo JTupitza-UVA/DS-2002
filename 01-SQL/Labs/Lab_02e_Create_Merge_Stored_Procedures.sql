@@ -1,5 +1,12 @@
 -- --------------------------------------------------------------------------------------
--- Create Stored Procedures that Implement Type 2 Slowly-Changing Dimensions
+-- Title: Lab 02e Create Merge Stored Procedures
+-- Author: Professor Jon Tupitza, University of Virginia School of Data Science
+-- --------------------------------------------------------------------------------------
+-- Description: This script demonstrates how to create stored procedures for maintaining
+-- Type 1 Slowly-Changing Dimensions. Type 1 Dimension changes are handled by updating
+-- values contained within the columns of currently existing rows, in-place, rather than
+-- inserting new rows to capture the new values associated with instances of the affected
+-- entities. Consequently, this overwrites historic values rather than maintaining them.  
 -- --------------------------------------------------------------------------------------
 USE northwind_dw;
 
