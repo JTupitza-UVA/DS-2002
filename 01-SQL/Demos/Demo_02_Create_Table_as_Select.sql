@@ -3,8 +3,8 @@ CREATE DATABASE `Northwind_DW_Demo` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!
 USE Northwind_DW_Demo;
 
 CREATE TABLE fact_orders AS
-SELECT o.id,
-	od.id,
+SELECT o.id AS order_id,
+	od.id AS order_detail_id,
     o.customer_id,
     o.employee_id,
     od.product_id,
@@ -29,5 +29,7 @@ ON o.id = od.order_id
 INNER JOIN northwind.order_details_status AS ods
 ON od.status_id = ods.id;
 
+ALTER TABLE fact_orders
+ADD COLUMN fact_order_key int NOT NULL PRIMARY KEY AUTO_INCREMENT FIRST;
 
 SELECT * FROM Northwind_DW_Demo.fact_orders;
