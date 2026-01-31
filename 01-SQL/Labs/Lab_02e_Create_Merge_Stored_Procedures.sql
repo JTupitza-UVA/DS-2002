@@ -84,7 +84,7 @@ DELIMITER ;
 -- Unit Test 'merge_customers'
 -- ---------------------------------------------------------------------
 -- Changes Area Code and 'Zip_Postal_Code' to accurate values.
-CALL merge_customers(29, 29, 'Company CC', 'Lee', 'Soo Jung', 'Purchasing Manager', '(123)555-0100', '(123)555-0101', '789 29th Street', 'Denver', 'CO', '99999', 'USA');
+CALL merge_customers(29, 29, 'Company CC', 'Lee', 'Soo Jung', 'Purchasing Manager', '(303)555-0100', '(303)555-0101', '789 29th Street', 'Denver', 'CO', '80271', 'USA');
 -- Creates a New Customer Record
 CALL merge_customers(30, 30, 'Company DD', 'McCartney', 'Paul', 'Purchasing Manager', '(703)555-1234', '(703)555-1212', '258 30th Street', 'Alexandria', 'VA', '22314', 'USA');
 
