@@ -10,4 +10,4 @@
 - <a href="https://www.youtube.com/watch?v=pN84J9tCqfU">Video: Demo 2 - PySpark Incremental Data Ingestion</a>
 - <a href="https://www.youtube.com/watch?v=pLzP20E4jM8">Video: Demo 3 - PySpark Medallion Architecture (Parquet & SparkSQL)</a>
 - <a href="https://www.youtube.com/watch?v=84cugl-B-Rc">Video: Lab 5 - PySpark Medallion Architecture</a>
-- <a href="https://youtu.be/RDHMWL3N4PQ">Video: Lab 6 - PySpark Medallion Streaming Data Lakehouse Architecture</a>
+- <a href="https://www.youtube.com/watch?v=3dBFWxaXlJ8">Video: Lab 6 - Building a Data Lakehouse with the PySpark Medallion Architecture</a>
