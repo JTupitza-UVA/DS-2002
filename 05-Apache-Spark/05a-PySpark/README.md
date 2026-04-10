@@ -9,5 +9,6 @@
 - <a href="https://www.youtube.com/watch?v=o1rieZ5u5Mk">Video: Demo 1 - PySpark QuickStart</a>
 - <a href="https://www.youtube.com/watch?v=pN84J9tCqfU">Video: Demo 2 - PySpark Incremental Data Ingestion</a>
 - <a href="https://www.youtube.com/watch?v=pLzP20E4jM8">Video: Demo 3 - PySpark Medallion Architecture (Parquet & SparkSQL)</a>
+- <a href="https://www.youtube.com/watch?v=T8LL2RGEGJU">Video: Demo 4 - PySpark Medallion Architecture (Delta & PySpark SQL API)
 - <a href="https://www.youtube.com/watch?v=84cugl-B-Rc">Video: Lab 5 - PySpark Medallion Architecture</a>
 - <a href="https://www.youtube.com/watch?v=3dBFWxaXlJ8">Video: Lab 6 - Building a Data Lakehouse with the PySpark Medallion Architecture</a>
