@@ -7,4 +7,5 @@
 ### Tutorials:
 - <a href="https://www.youtube.com/watch?v=oMzMQK1LPqk">Video: Lecture 7 - Introduction to Spark and Databricks</a>
 - <a href="https://www.youtube.com/watch?v=o1rieZ5u5Mk">Video: Demo 1 - PySpark QuickStart</a>
+- <a href="https://www.youtube.com/watch?v=pN84J9tCqfU">Video: Demo 2 - PySpark Incremental Data Ingestion</a>
 - <a href="https://youtu.be/RDHMWL3N4PQ">Video: Lab 6 - Databricks Data Lakehouse Demonstration</a>
